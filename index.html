@@ -1,0 +1,1343 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>Wix-copy</title>
+    <style>
+      @import url(https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;800;900&display=swap);
+
+      body {
+        font-family: "Poppins", sans-serif;
+      }
+      .accordion-content {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease-out;
+      }
+      .accordion-content.active {
+        max-height: 200px;
+      }
+
+
+      .swiper {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+
+
+    </style>
+
+    <script>
+      function toggleAccordion(id, iconId) {
+        const content = document.getElementById(id);
+        const icon = document.getElementById(iconId);
+        content.classList.toggle("hidden");
+        icon.classList.toggle("rotate-180");
+      }
+    </script>
+  </head>
+  <body>
+    
+    <header class="header border-b border-[#ededed]">
+      <div class="w-[95%] m-auto py-4 flex items-end justify-between">
+        <div
+          class="header-left flex items-end gap-4 sm:gap-5 md:gap-6 lg:gap-5"
+        >
+          <h1 class="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl">
+            Wıx
+          </h1>
+
+          <a class="hidden lg:flex text-base sm:text-lg lg:text-lg" href=""
+            >Product</a
+          >
+          <a class="hidden lg:flex text-base sm:text-lg lg:text-lg" href=""
+            >Solutıons</a
+          >
+          <a class="hidden lg:flex text-base sm:text-lg lg:text-lg" href=""
+            >Resources</a
+          >
+          <a class="hidden lg:flex text-base sm:text-lg lg:text-lg" href=""
+            >Prıcıng</a
+          >
+          <a class="hidden lg:flex text-base sm:text-lg lg:text-lg" href=""
+            >Wıxel</a
+          >
+          <div
+            class="border-[0.3px] hidden lg:flex border-[gray] h-[20px]"
+          ></div>
+          <a class="hidden lg:flex text-base sm:text-lg lg:text-lg" href=""
+            >Wix studio</a
+          >
+          <a class="hidden lg:flex text-base sm:text-lg lg:text-lg" href=""
+            >Enterprice</a
+          >
+        </div>
+        <div class="header-right items-center gap-3 hidden lg:flex">
+          <button class="">
+            <i class="fa-solid text-[gray] fa-globe"></i>
+          </button>
+          <div
+            class="border-[0.3px] hidden lg:flex border-[gray] h-[20px]"
+          ></div>
+          <a href="md:text-2xl lg:text-2xl underline ">LogIn</a>
+          <button
+            class="flex items-center justify-center h-10 w-32 bg-[#166aea] text-white p-2 rounded-[30px] hover:bg-[#166beac4]"
+          >
+            Get Started
+          </button>
+        </div>
+        <button
+          class="flex items-center justify-center h-10 w-10 rounded-md border border-[#fff] lg:hidden"
+        >
+          <i class="fa-solid text-[#000] text-xl fa-bars"></i>
+        </button>
+      </div>
+    </header>
+
+    <section
+      id="showcase"
+      class="showcase relative bg-gradient-to-b from-white via-[#e3effd] to-[#cbe2fd]"
+    >
+      <!-- Absolute imges  -->
+      <img
+        class="lg:flex hidden z-20 w-20 h-20 md:w-auto md:h-auto absolute left-40 top-20"
+        src="./img//chap-tepa.svg"
+        alt="chap tepadagi rasm"
+      />
+      <img
+        id="lamp"
+        class="lg:flex hidden z-20 absolute left-20 top-60"
+        src="./img/chap-center.png"
+        alt="chap centered rasm"
+      />
+      <img
+        id="grun"
+        class="lg:flex hidden z-20 absolute left-60 bottom-10"
+        src="./img/chap-bottom.svg"
+        alt="chap bottom rasm"
+      />
+
+      <img
+        id="bor"
+        class="lg:flex hidden z-20 absolute right-40 top-20"
+        src="./img/ong-top.png"
+        alt="ong top  rasm"
+      />
+      <img
+        id="aitext"
+        class="lg:flex hidden z-20 absolute right-20 top-80"
+        src="./img/ong-center.png"
+        alt="ong centered rasm"
+      />
+      <img
+        id="ongbottom"
+        class="lg:flex hidden z-20 absolute right-40 bottom-10"
+        src="./img/ong-bottom.png"
+        alt="ong bottom rasm"
+      />
+      <img
+        id="ramka"
+        class="lg:flex hidden z-20 absolute right-40 top-20"
+        src="./img/ramka.svg"
+        alt="Ramka svg"
+      />
+
+      <div
+        class="w-[80%] md:w-[50%] min-h-[300px] md:min-h-[650px] m-auto flex flex-col gap-4 sm:gap-7 items-center mt-10 md:pt-20"
+      >
+        <h1
+          class="text-center text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-[400]"
+        >
+          Create a website without limits
+        </h1>
+        <h4
+          class="font-[400] w-full md:w-[65%] text-center text-base sm:text-xl md:"
+        >
+          Bring your vision to life with the website builder that gives you the
+          tools you need to succeed.
+        </h4>
+        <button
+          class="flex text-white rounded-[20px] h-12 sm:h-15 items-center justify-center w-full bg-[#166aea] sm:w-[40%] md:w-[50%] lg:w-[30%]"
+        >
+          Get Started
+        </button>
+        <p class="text-xs sm:text-base">
+          Start for free. No credit card required.
+        </p>
+      </div>
+    </section>
+
+    <section class="second-section bg-[#cbe2fd] sticky top-10">
+      <div class="flex w-[90%] z-50 lg:hidden m-auto">
+        <img
+          class="w-full h-[300px] md:h-[600px]"
+          src="https://static.wixstatic.com/media/0784b1_f1c80be0eb4447f3836801a928374b86~mv2.png/v1/fill/w_1236,h_694,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/tablet-new.png"
+          alt=""
+        />
+      </div>
+
+      <div
+        id="target"
+        class="w-[90%] lg:flex hidden h-[600px] items-center justify-center m-auto"
+      >
+        <div
+          class="border flex border-[#c2c4fe] items-start pt-8 justify-between bg-[#c2c4fe] h-full w-full rounded-[20px_20px_0px_0px]"
+        >
+          <div
+            class="second-left h-full flex p-2 sm:p-4 items-end justify-center w-full md:w-[29%]"
+          >
+            <div class="felx flex-col gap-2 md:gap-4">
+              <p class="text-base sm:text-lg md:text-xl text-[#1852a3]">
+                Froward-thinking Design. <br />
+                Sustainable Craftsmanship
+              </p>
+              <button
+                class="w-full h-10 border border-[#1852a3] rounded-[20px] bg-[transparent] text-[#1852a3] font-[500]"
+              >
+                New collection <i class="fa-solid fa-arrow-right-long"></i>
+              </button>
+            </div>
+          </div>
+          <div class="second-center w-full md:w-[40%]">
+            <img
+              src="https://static.wixstatic.com/media/0784b1_ac095c155c2f464187025fc2f5275468~mv2.jpg/v1/fill/w_754,h_688,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/furniture%201.jpg"
+              alt=""
+            />
+          </div>
+          <div
+            class="second-righ flex items-center justify-start h-full w-full md:w-[29%]"
+          >
+            <p class="text-base sm:text-lg md:text-xl text-[#1852a3]">
+              Consult With Our <br />
+              Interior Designer
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="Ai-builder-section h-screen bg-[#8fa3ff] rounded-[60px_60px_0px_0px] z-20 sticky top-0 p-10"
+    >
+      <div class="w-[90%] m-auto">
+        <div
+          class="ai-top flex gap-2 md:gap-4 flex-col sm:flex-row items-center justify-between"
+        >
+          <h4
+            class="text-base text-[#101585] w-full md:w-[50%] lg:w-[60%] sm:text-xl md:text-3xl lg:text-4xl xl:text-5xl"
+          >
+            Create your site in minutes with our AI website builder
+          </h4>
+          <div class="flex flex-col items-end gap-3 sm:gap-4">
+            <p
+              class="flex w-full md:w-[70%] text-sm md:text-base text-[#232092]"
+            >
+              Describe what you want and get a unique, business-ready website
+              tailored just for you.
+            </p>
+            <button
+              class="h-16 text-white rounded-[30px] bg-[#101585] font-[600] text-lg w-full sm:w-[50%] md:w-[50%] lg:w-[70%]"
+            >
+              Get Started
+            </button>
+          </div>
+        </div>
+
+        <div
+          class="aisection-bottom w-full h-[250px] sm:h-[400px] md:h-[500px]"
+        >
+          <img class="w-full h-full" src="./img/aigenereate.png" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="designer-template h-screen bg-[#024051] rounded-[60px_60px_0px_0px] z-40 relative p-10"
+    >
+      <div class="w-[90%] m-auto">
+        <div
+          class="designer-top flex gap-2 md:gap-4 flex-col sm:flex-row items-center justify-between"
+        >
+          <h4
+            class="text-base text-[#fdf4a1] w-full md:w-[50%] lg:w-[60%] sm:text-xl md:text-3xl lg:text-4xl xl:text-5xl"
+          >
+            Or start from a designer-made template
+          </h4>
+          <div class="flex flex-col items-end gap-3 sm:gap-4">
+            <p
+              class="flex w-full md:w-[70%] text-sm md:text-base text-[#fdf4a1]"
+            >
+              Describe what you want and get a unique, business-ready website
+              tailored just for you.
+            </p>
+            <button
+              class="h-16 text-black rounded-[30px] bg-[#fdf4a1] font-[600] text-lg w-full sm:w-[50%] md:w-[50%] lg:w-[70%]"
+            >
+              Get Started
+            </button>
+          </div>
+        </div>
+
+        <div
+          class="designer-bottom overflow-x-scroll flex gap-10 items-center justify-between overflow-hidden mt-7"
+        >
+          <div class="card-designer flex flex-col gap-4">
+            <div
+              class="w-[300px] overflow-hidden rounded-lg relative border h-[300px] sm:w-[350px] sm:h-[400px] md:w-[360px] md:h-[420px] lg:w-[400px] lg:h-[450px]"
+            >
+              <img
+                class="w-full h-full"
+                src="https://www.hubspot.com/hs-fs/hubfs/lemon%20(1).jpg?width=650&height=425&name=lemon%20(1).jpg"
+                alt=""
+              />
+
+              <button></button>
+            </div>
+            <a class="text-[#f3f191] text-base sm:text-lg md:text-xl" href=""
+              >e-Commerce <i class="fa-solid fa-arrow-right-long"></i
+            ></a>
+          </div>
+
+          <div class="card-designer flex flex-col gap-4">
+            <div
+              class="w-[300px] overflow-hidden rounded-lg relative border h-[300px] sm:w-[350px] sm:h-[400px] md:w-[360px] md:h-[420px] lg:w-[400px] lg:h-[450px]"
+            >
+              <img
+                class="w-full h-full"
+                src="https://elements-resized.envatousercontent.com/elements-cover-images/edbbc4ab-95c0-4fca-b096-036d38cc9711?w=433&cf_fit=scale-down&q=85&format=auto&s=3055db25f7249cccc3be0006043c1d05b75d5250c9dc3ed0d834b382906e22db"
+                alt=""
+              />
+
+              <button></button>
+            </div>
+            <a class="text-[#f3f191] text-base sm:text-lg md:text-xl" href=""
+              >e-Commerce <i class="fa-solid fa-arrow-right-long"></i
+            ></a>
+          </div>
+          <div class="card-designer flex flex-col gap-4">
+            <div
+              class="w-[300px] overflow-hidden rounded-lg relative border h-[300px] sm:w-[350px] sm:h-[400px] md:w-[360px] md:h-[420px] lg:w-[400px] lg:h-[450px]"
+            >
+              <img
+                class="w-full h-full"
+                src="https://i.poweredtemplates.com/p/sp/86184/sp_slide_h_1.jpg"
+                alt=""
+              />
+
+              <button></button>
+            </div>
+            <a class="text-[#f3f191] text-base sm:text-lg md:text-xl" href=""
+              >e-Commerce <i class="fa-solid fa-arrow-right-long"></i
+            ></a>
+          </div>
+          <div class="card-designer flex flex-col gap-4">
+            <div
+              class="w-[300px] overflow-hidden rounded-lg relative border h-[300px] sm:w-[350px] sm:h-[400px] md:w-[360px] md:h-[420px] lg:w-[400px] lg:h-[450px]"
+            >
+              <img
+                class="w-full h-full"
+                src="https://s.tmimgcdn.com/scr/1200x750/52500/free-responsive-corporate-template-website-template_52524-0-original.jpg"
+                alt=""
+              />
+
+              <button></button>
+            </div>
+            <a class="text-[#f3f191] text-base sm:text-lg md:text-xl" href=""
+              >e-Commerce <i class="fa-solid fa-arrow-right-long"></i
+            ></a>
+          </div>
+          <div class="card-designer flex flex-col gap-4">
+            <div
+              class="w-[300px] overflow-hidden rounded-lg relative border h-[300px] sm:w-[350px] sm:h-[400px] md:w-[360px] md:h-[420px] lg:w-[400px] lg:h-[450px]"
+            >
+              <img
+                class="w-full h-full"
+                src="https://themewagon.com/wp-content/uploads/2020/12/eflyer.jpg"
+                alt=""
+              />
+
+              <button></button>
+            </div>
+            <a class="text-[#f3f191] text-base sm:text-lg md:text-xl" href=""
+              >e-Commerce <i class="fa-solid fa-arrow-right-long"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Customise section -->
+    <section
+      class="customise py-10 md:py-20 flex items-center justify-center relative bg-[#cdc5ff] z-10"
+    >
+      <div
+        class="w-[90%] m-auto flex flex-col lg:flex-row items-center justify-between"
+      >
+        <div
+          class="customise-left w-full lg:w-[45%] flex flex-col gap-3 sm:gap-6 md:gap-10"
+        >
+          <h3
+            class="text-[#101585] w-full md:w-[70%] text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-5xl"
+          >
+            Customize to make it your own
+          </h3>
+
+          <div class="flex justify-end flex-col gap-3">
+            <h4
+              class="font-[400] text-[#101585] text-xs sm:text-sm md:text-base lg:text-xl"
+            >
+              <i class="fa-solid text-[#101585] fa-arrow-right-long"></i>
+              Intuitive drag and drop
+            </h4>
+            <p
+              class="text-[#101585] w-full md:w-[60%] font-[400] text-sm sm:text-sm"
+            >
+              Effortlessly add and arrange your text, visuals, buttons and even
+              entire sections.
+            </p>
+          </div>
+
+          <h4 class="text-base font-[500] sm:text-xl text-[#101585]">
+            Built-in AI tools
+          </h4>
+          <h4 class="text-base font-[500] sm:text-xl text-[#101585]">
+            Advanced design features
+          </h4>
+
+          <button
+            class="w-full sm:w-[70%] md:w-[60%] lg:w-[50%] text-base md:text-xl text-white h-16 bg-[#101585] rounded-[50px]"
+          >
+            Get Started
+          </button>
+        </div>
+
+        <div class="customise-right w-full lg:w-[55%]">
+          <img class="w-full" src="./img/prosunreusable.png" alt="img" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Business section -->
+    <section class="business-section relative bg-[#fff] z-20 mt-10">
+      <div class="w-[90%] m-auto flex flex-col gap-2 sm:gap-3 md:gap-5">
+        <div
+          class="business-top flex flex-col gap-2 sm:flex-row sm:justify-between sm:items-start py-10 sm:gap-4"
+        >
+
+        <div data-aos="fade-up">
+
+          <h3
+          class="text-2xl w-[80%] sm:w-[40%] text-[#060606] sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl"
+          >
+          Add anything you need for your business as you go
+        </h3>
+      </div>
+          <button
+            class="w-full sm:w-[30%] md:w-[25%] lg:w-[20%] h-16 rounded-[30px] text-lg sm:text-2xl bg-[#000] text-white"
+          >
+            Get Started
+          </button>
+        </div>
+
+        <div
+          class="business-bttom flex gap-3 sm:gap-3 flex-col lg:flex-row lg:justify-between pb-10"
+        >
+          <div
+            class="business-bottom-left w-full flex flex-col gap-3 sm:gap-4 lg:w-[35%]"
+          >
+            <!-- eCommerce Accordion (Default Open) -->
+            <div
+              class="accordion-item bg-slate-50 rounded-xl shadow-sm overflow-hidden"
+            >
+              <div
+                class="accordion-header flex justify-between items-center cursor-pointer p-6"
+                data-target="accordion-1"
+              >
+                <h2 class="text-xl font-semibold text-gray-800">eCommerce</h2>
+                <button class="accordion-toggle text-gray-500">
+                  <svg
+                    class="chevron-down hidden"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="m6 9 6 6 6-6" />
+                  </svg>
+                  <svg
+                    class="chevron-up block"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="m18 15-6-6-6 6" />
+                  </svg>
+                </button>
+              </div>
+              <div id="accordion-1" class="accordion-content active px-6 pb-6">
+                <div
+                  class="flex flex-col md:flex-row md:justify-between md:items-center gap-4"
+                >
+                  <p class="text-gray-700">
+                    <span
+                      class="font-semibold underline decoration-gray-400 underline-offset-4"
+                      >Sell online</span
+                    >
+                    and <span class="font-semibold"> manage orders</span>,
+                    <span class="font-semibold"> shipping</span> and more in one
+                    place.
+                  </p>
+                  <a
+                    href="#"
+                    class="flex items-center gap-1 text-gray-800 font-medium whitespace-nowrap"
+                  >
+                    Learn more
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path d="M5 12h14" />
+                      <path d="m12 5 7 7-7 7" />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Scheduling Accordion -->
+            <div
+              class="accordion-item bg-slate-50 rounded-xl shadow-sm overflow-hidden"
+            >
+              <div
+                class="accordion-header flex justify-between items-center cursor-pointer p-6"
+                data-target="accordion-2"
+              >
+                <h2 class="text-xl font-semibold text-gray-800">Scheduling</h2>
+                <button class="accordion-toggle text-gray-500">
+                  <svg
+                    class="chevron-down block"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="m6 9 6 6 6-6" />
+                  </svg>
+                  <svg
+                    class="chevron-up hidden"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="m18 15-6-6-6 6" />
+                  </svg>
+                </button>
+              </div>
+              <div id="accordion-2" class="accordion-content px-6 pb-6">
+                <p class="text-gray-700">
+                  Create and manage appointments, classes, and events with our
+                  intuitive scheduling tools.
+                </p>
+              </div>
+            </div>
+
+            <!-- Portfolio Accordion -->
+            <div
+              class="accordion-item bg-slate-50 rounded-xl shadow-sm overflow-hidden"
+            >
+              <div
+                class="accordion-header flex justify-between items-center cursor-pointer p-6"
+                data-target="accordion-3"
+              >
+                <h2 class="text-xl font-semibold text-gray-800">Portfolio</h2>
+                <button class="accordion-toggle text-gray-500">
+                  <svg
+                    class="chevron-down block"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="m6 9 6 6 6-6" />
+                  </svg>
+                  <svg
+                    class="chevron-up hidden"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="m18 15-6-6-6 6" />
+                  </svg>
+                </button>
+              </div>
+              <div id="accordion-3" class="accordion-content px-6 pb-6">
+                <p class="text-gray-700">
+                  Showcase your work and projects with customizable portfolio
+                  templates.
+                </p>
+              </div>
+            </div>
+
+            <!-- Blog Accordion -->
+            <div
+              class="accordion-item bg-slate-50 rounded-xl shadow-sm overflow-hidden"
+            >
+              <div
+                class="accordion-header flex justify-between items-center cursor-pointer p-6"
+                data-target="accordion-4"
+              >
+                <h2 class="text-xl font-semibold text-gray-800">Blog</h2>
+                <button class="accordion-toggle text-gray-500">
+                  <svg
+                    class="chevron-down block"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="m6 9 6 6 6-6" />
+                  </svg>
+                  <svg
+                    class="chevron-up hidden"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="m18 15-6-6-6 6" />
+                  </svg>
+                </button>
+              </div>
+              <div id="accordion-4" class="accordion-content px-6 pb-6">
+                <p class="text-gray-700">
+                  Write, publish, and grow your audience with powerful blogging
+                  tools.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="business-bottom-right w-full lg:w-[60%]">
+            <img src="./img/shampo.png" alt="Product image" class="w-full" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="make-website z-40 h-[300px] sm:h-[500px] relative py-3 sm:py-4 md:py-5 xl:py-20 bg-[#014051]"
+    >
+      <div
+        class="w-[90%] m-auto items-center justify-center flex flex-col gap-3 sm:gap-4"
+      >
+        <h4
+          class="text-center w-full sm:w-[60%] md:text-[50%] text-white text-xl sm:text-2xl md:text-3xl lg:text-3xl xl:text-5xl"
+        >
+          Make your website official with your own domain name
+        </h4>
+
+        <form
+          class="w-full py-2 flex items-center justify-between pr-7 bg-white sm:w-[80%] md:w-[70%] h-[50px] md:h-[85px] border-[#538ab6] border rounded-[40px]"
+          action=""
+        >
+          <input
+            placeholder="Search ... "
+            class="rounded-[40px] w-[80%] h-full bg-transparent outline-none pl-10"
+            type="text"
+          />
+          <button
+            class="h-full w-[15%] font-[500] text-xs sm:text-base md:text-lg lg:text-xl rounded-[90px] bg-[#faa85e]"
+          >
+            Search
+          </button>
+        </form>
+
+        <p class="text-sm sm:text-text-lg text-white">
+          Get a <a class="underline" href="#">custom domain</a> free for one
+          year with the initial purchase of an annual
+          <a class="underline" href="#">Premium plan</a> .
+        </p>
+      </div>
+    </section>
+
+
+
+
+
+    <section class="market relative bg-white h-auto py-10 z-40">
+      <div class="w-[90%] m-auto flex flex-col gap-3 md:gap-6">
+        <div
+          class="market-top flex gap-4 flex-col items-start justify-between sm:flex-row"
+        >
+          <h3
+            class="text-3xl sm:text-xl md:text-3xl lg:text-4xl xl:text-5xl w-full sm:w-[70%] md:w-[60%] lg:w-[50%]"
+          >
+            Market your site from launch to scale
+          </h3>
+          <button
+            class="w-full bg-[#000] h-16 text-white rounded-[30px] sm:w-[40%] md:w-[30%] lg:w-[20%] text-base sm:text-lg"
+          >
+            Get Started
+          </button>
+        </div>
+
+
+
+        <div class="market-bttoom flex flex-col sm:flex-row  items-start gap-2 sm:gap-8 sm:overflow-x-auto sm:whitespace-nowrap overflow-hidden">
+          
+
+          <div class="acc-card w-[280px] sm:w-[500px] ">
+            <!-- Accordion Header -->
+        <div class="max-w-5xl mx-auto rounded-2xl bg-[#f1f5f9] shadow-md">
+          <button
+            onclick="toggleAccordion('accordion-content', 'accordion-icon')"
+            class="w-full px-6 py-4 text-left text-lg font-semibold flex items-center justify-between"
+          >
+            About this Card
+            <svg
+              id="accordion-icon"
+              class="w-5 h-5 transition-transform duration-300"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+          </button>
+          <div id="accordion-content" class="hidden  break-words whitespace-normal overflow-hidden px-6 pb-4 text-gray-700">
+            <p class="">
+              This campaign is focused on promoting the Vonté skincare product
+        
+            </p>
+          </div>
+        </div>
+
+        <!-- Always-visible Cards Section -->
+        <div
+          class="bg-[#863a29] p-10 md:p-20 rounded-[30px]"
+        >
+
+        <img class="w-full h-full" src="./img/accc-card1img.png" alt="">
+    
+        </div>
+
+        </div>
+
+        
+
+           
+        </div>
+
+      </div>
+    </section>
+
+
+
+
+
+    <!-- Run section -->
+    <section
+      class="customise z-40   flex items-center justify-center relative bg-[#cdc5ff] "
+    >
+      <div
+        class="w-[90%] m-auto flex gap-4  sm:gap-4 flex-col lg:flex-row items-center justify-between"
+      >
+        <div
+          class="customise-left w-full lg:w-[45%] flex flex-col gap-3 sm:gap-6 md:gap-10"
+        >
+          <h3
+            class="text-[black] w-full md:w-[70%] text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-5xl"
+          >
+            Customize to make it your own
+          </h3>
+
+          <div class="flex justify-end flex-col gap-3">
+            <h4
+              class="font-[400] text-[black] text-xs sm:text-sm md:text-base lg:text-xl"
+            >
+              <i class="fa-solid text-[black] fa-arrow-right-long"></i>
+              Intuitive drag and drop
+            </h4>
+            <p
+              class="text-[black] w-full md:w-[60%] font-[400] text-sm sm:text-sm"
+            >
+              Effortlessly add and arrange your text, visuals, buttons and even
+              entire sections.
+            </p>
+          </div>
+
+          <h4 class="text-base font-[500] sm:text-xl text-[black]">
+            Built-in AI tools
+          </h4>
+          <h4 class="text-base font-[500] sm:text-xl text-[black]">
+            Advanced design features
+          </h4>
+
+          <button
+            class="w-full sm:w-[70%] md:w-[60%] lg:w-[50%] text-base md:text-xl text-white h-16 bg-black rounded-[50px]"
+          >
+            Get Started
+          </button>
+        </div>
+
+        <div class="customise-right p-10 flex items-center justify-center bg-[#8fa3ff] rounded-[30px] h-[400px] sm:h-[600px]  w-full lg:w-[45%]">
+          <img class="w-full h-full rounded-lg" src="./img/dashboardimg.png" alt="img" />
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Start Grow -->
+
+    <section class=" grow-section relative z-40 bg-[#ffffff] py-3 sm:py-4 md:py-20">
+      <div class="w-[90%] m-auto">
+
+        <div class="grow-top flex flex-col gap-3 sm:flex-row  items-start justify-between ">
+          <div data-aos="fade-up">
+            <h4 class="font-[400] text-lg sm:text-lg md:text-3xl lg:text-4xl xl:text-6xl">Grow your website on a rock-solid foundation</h4>
+          </div>
+          <div class="flex flex-col gap-2">
+            <div data-aos="fade-up">
+              <h6>Set your site up for success on the powerful infrastructure that supports millions of websites worldwide.</h6>
+            </div>
+            <!-- <button class="w-full text-white text-base rounded-[90px] sm:text-lg sm:w-[30%] md:w-[30%] bg-[#000] h-16">
+              Get Started
+            </button> -->
+            
+          <button
+          class="w-full sm:w-[70%] md:w-[60%] lg:w-[50%] text-base md:text-xl text-white h-16 bg-black rounded-[50px]"
+        >
+          Get Started
+        </button>
+          </div>
+        </div>
+
+
+        <div class="grow-bottom mt-10 grid grid-cols-1 gap-2 sm:flex-row sm:gap-4 md:gap-6 sm:grid-cols-2   xl:grid-cols-4  lg:gap-7">
+
+         
+         
+<div data-aos="fade-up"
+     data-aos-anchor-placement="top-bottom">
+
+     <div class="grow-card w-full flex flex-col justify-end  p-10     rounded-2xl bg-[#014051] ">
+            
+      <div class="flex flex-col gap-8 ">
+        <h4 class="text-base text-white sm:text-lg md:text-xl lg:text-2xl">
+          Engineered for top speed</h4>
+          <p class="text-xs text-white sm:text-base md:text-lg">Wix sites are designed to ensure fast loading times.
+
+          </p>
+      </div>
+    </div>
+
+
+</div>
+
+
+
+<div data-aos="fade-up"
+data-aos-anchor-placement="top-bottom">
+
+
+
+<div class="grow-card w-full flex flex-col justify-end  p-10     rounded-2xl bg-[#ffc2fe] ">
+  
+  <div class="flex flex-col gap-8 ">
+    <h4 class="text-base text-white sm:text-lg md:text-xl lg:text-2xl">
+      Engineered for top speed</h4>
+      <p class="text-xs text-white sm:text-base md:text-lg">Wix sites are designed to ensure fast loading times.
+        
+      </p>
+    </div>
+  </div>
+</div>
+
+
+<div data-aos="fade-up"
+data-aos-anchor-placement="top-bottom">
+
+<div class="grow-card w-full flex flex-col justify-end  p-10     rounded-2xl bg-[#d1e6d1] ">
+  
+  <div class="flex flex-col gap-8 ">
+    <h4 class="text-base text-white sm:text-lg md:text-xl lg:text-2xl">
+      Engineered for top speed</h4>
+      <p class="text-xs text-white sm:text-base md:text-lg">Wix sites are designed to ensure fast loading times.
+        
+      </p>
+    </div>
+  </div>
+</div>
+
+
+
+<div data-aos="fade-up"
+     data-aos-anchor-placement="top-bottom">
+     <div class="grow-card w-full flex flex-col justify-end  p-10     rounded-2xl bg-[#863a29] ">
+       
+       <div class="flex flex-col gap-8 ">
+         <h4 class="text-base text-white sm:text-lg md:text-xl lg:text-2xl">
+           Engineered for top speed</h4>
+           <p class="text-xs text-white sm:text-base md:text-lg">Wix sites are designed to ensure fast loading times.
+             
+          </p>
+        </div>
+      </div>
+    </div>
+
+
+        </div>
+
+
+      </div>
+    </section>
+
+
+
+    <!-- How to create free site -->
+    <section class="create relative z-40 bg-[#f1f5f9]">
+      <div class="w-[90%] m-auto flex flex-col gap-3 items-start  lg:flex-row  pt-10 sm:justify-between">
+
+
+        <div class="create-left w-full flex flex-col gap-3 sm:gap-8 items-center lg:items-start  lg:w-[40%] ">
+          <h4 class="text-xl text-center lg:text-start w-full sm:w-[90%] sm:text-2xl md:text-3xl lg:text-4xl xl:text-6xl text-[#000]">How to create a website for free</h4>
+          <h5 class="text-lg text-center lg:text-start sm:text-xl md:text-2xl w-full md:w-[90%]">Follow these 7 simple steps to create a website today.</h5>
+          <div class="flex items-center flex-col lg:flex-row gap-3 sm:gap-3 md:gap-5">
+            <button
+            class="w-full  lg:w-[100%] text-base md:text-xl text-white h-16 bg-black rounded-[50px]"
+          >
+            Get Started
+          </button>
+
+
+            <a class="text-base sm:text-lg " href="">Learn more <i class="fa-solid fa-arrow-right-long"></i></a>
+
+
+          </div>
+        </div>
+
+        <div class="create-right flex flex-col w-full gap-10 sm:gap-5 md:gap-7 lg:w-[60%]  ">
+
+          <div class="how1 w-full h-[30px] flex items-start gap-3 sm:gap-4 border-b border-[#000]">
+            <p class="text-[#747678] text-xs sm:text-sm  ">1.</p>
+            <h4 class="text-xs sm:text-sm  md:text-base  text-[#54585a] "><span class="font-[500] text-[#000]">Pick a platform.</span> Sign up for a secure and reliable free website builder like Wix.</h4>
+          </div>
+
+          
+          <div class="how2 w-full h-[30px] flex items-start gap-3 sm:gap-4 border-b border-[#000]">
+            <p class="text-[#747678] text-xs sm:text-sm  ">2.</p>
+            <h4 class="text-xs sm:text-sm  md:text-base  text-[#54585a] "><span class="font-[500] text-[#000]">Plan out your website</span> Map out your goals, site structure and who your audience is..</h4>
+          </div>
+          
+          <div class="how3 w-full h-[30px] flex items-start gap-3 sm:gap-4 border-b border-[#000]">
+            <p class="text-[#747678] text-xs sm:text-sm  ">3.</p>
+            <h4 class="text-xs sm:text-sm  md:text-base  text-[#54585a] "><span class="font-[500] text-[#000]">Start creating.</span> Choose from 900+ free templates or use the AI website builder.</h4>
+          </div>
+          
+          
+            
+          <div class="how4 w-full h-[30px] flex items-start gap-3 sm:gap-4 border-b border-[#000]">
+            <p class="text-[#747678] text-xs sm:text-sm  ">4.</p>
+            <h4 class="text-xs sm:text-sm  md:text-base  text-[#54585a] "><span class="font-[500] text-[#000]">Customize your website.</span> Choose from 900+ free templates or use the AI website builder.</h4>
+          </div>
+
+          <div class="how5 w-full h-[30px] flex items-start gap-3 sm:gap-4 border-b border-[#000]">
+            <p class="text-[#747678] text-xs sm:text-sm  ">5.</p>
+            <h4 class="text-xs sm:text-sm  md:text-base  text-[#54585a] "><span class="font-[500] text-[#000]">Optimize for search engines. </span>  Increase your site’s visibility with a suite of built-in SEO tools.</h4>
+          </div>
+
+          <div class="how6 w-full h-[30px] flex items-start gap-3 sm:gap-4 border-b border-[#000]">
+            <p class="text-[#747678] text-xs sm:text-sm  ">6.</p>
+            <h4 class="text-xs sm:text-sm  md:text-base  text-[#54585a] "><span class="font-[500] text-[#000]">Publish your website. </span> Register and connect a custom domain name and go live.</h4>
+          </div>
+          
+          <div class="how7 w-full h-[30px] flex items-start gap-3 sm:gap-4 border-b border-[#000]">
+            <p class="text-[#747678] text-xs sm:text-sm  ">7.</p>
+            <h4 class="text-xs sm:text-sm  md:text-base  text-[#54585a] "><span class="font-[500] text-[#000]">Promote and drive traffic. </span> Register and connect a custom domain name and go live.</h4>
+          </div>
+         
+          <div class="how8 w-full h-[30px] flex items-start gap-3 sm:gap-4 border-b border-[#000]">
+            <p class="text-[#747678] text-xs sm:text-sm  ">8.</p>
+            <h4 class="text-xs sm:text-sm  md:text-base  text-[#54585a] "><span class="font-[500] text-[#000]">Promote and drive traffic.</span>  Use built-in marketing tools to grow and expand your reach.</h4>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+
+    <!-- Thriving section -->
+    <section class="Thriving-section relative z-40 bg-[#101585]">
+      <div class="w-[90%] m-auto ">
+
+        <div class="thriving-top">
+          <h3 class="text-3xl text-center sm:text-4xl md:text-7xl min-[1221px]:text-[7em] lg:text-[140px] text-[#dff994]" >Thriving with Wix</h3>
+        </div>
+
+        <div class="thriving-bottom flex  overflow-x-scroll overflow-hidden">
+          
+          <div>
+            <div  class="w-full sm:w-[100%] h-[300px] sm:h-[400px]   "  >
+              <img class="w-full h-full" src="https://static.wixstatic.com/media/7e521c_9b10dd17e4b943f6be4daa464bedeb7d~mv2.jpg/v1/fill/w_556,h_560,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/post.jpg" alt="img">
+            </div>
+            <a class="text-white text-base sm:text-lg md:text-xl" href=""> Scandinazn <i class="fa-solid fa-arrow-right-long"></i></a>
+          </div>
+
+        
+    
+
+        </div> 
+
+
+
+
+      </div>
+
+    </section>
+
+
+    <!-- inspired -->
+
+    <section class="inspired-section relative z-40 bg-[#ffffff]">
+      <div class="w-[90%] m-auto py-5">
+
+      
+
+        <div class="inspired-top flex   flex-col md:flex-row gap-6 items-start py-10 justify-between">
+
+        <div class="inspired-top-left w-full   sm:w-[50%]">
+          <h3 class="text-lg sm:text-xl md:text-3xl lg:text-4xl xl:text-5xl text-[#000000] ">Get inspired, gain new skills and see what’s trending</h3>
+
+          </div>
+           <button
+            class="w-full  md:w-[27%]  lg:w-[25%] text-base md:text-xl text-white h-16 bg-black rounded-[50px]"
+          >
+            Explore the blog
+          </button>
+
+        </div>
+
+
+
+         <div class="inspired-bottom gap-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+
+          <div class="inspired-card flex flex-col rounded-[20px] w-full bg-[#f1f5f9] overflow-hidden  transition-all duration-300 transform hover:-translate-y-2 hover:shadow-lg cursor-pointer">
+            <div class="card-top w-full -[300px] sm:h-[350px]">
+              <img class="w-full h-full object-cover" src="./img/inspired1.png" alt="img">
+            </div>
+
+            <div class="card-bottom  justify-end rounded-[20px] p-5 flex flex-col  gap-2 sm:gap-3 bg-[#f1f5f9]">
+              <h4 class="text-base sm:text-lg md:text-xl font-[500] " >How to design a website </h4>
+              <h5 class="text-base sm:text-lg md:text-xl font-[500] ">(step-by-step guide)</h5>
+            </div>
+
+          </div>
+
+          <div class="inspired-card flex flex-col rounded-[20px] w-full bg-[#f1f5f9] overflow-hidden  transition-all duration-300 transform hover:-translate-y-2 hover:shadow-lg cursor-pointer">
+            <div class="card-top w-full -[300px] sm:h-[350px]">
+              <img class="w-full h-full object-cover" src="./img/inspire2.png" alt="img">
+            </div>
+
+            <div class="card-bottom justify-end  rounded-[20px] p-5 flex flex-col  gap-2 sm:gap-3 bg-[#f1f5f9]">
+              <h4 class="text-base sm:text-lg md:text-xl font-[500] " >How to design a website </h4>
+              <h5 class="text-base sm:text-lg md:text-xl font-[500] ">(step-by-step guide)</h5>
+            </div>
+
+          </div>
+
+          <div class="inspired-card flex flex-col rounded-[20px] w-full bg-[#f1f5f9] overflow-hidden  transition-all duration-300 transform hover:-translate-y-2 hover:shadow-lg cursor-pointer">
+            <div class="card-top w-full h-[300px] sm:h-[350px]">
+              <img class="w-full h-full object-cover" src="./img/inspired3.png" alt="img">
+            </div>
+
+            <div class="card-bottom justify-end rounded-[20px] p-5 flex flex-col  gap-2 sm:gap-3 bg-[#f1f5f9]">
+              <h4 class="text-base sm:text-lg md:text-xl font-[500] " >How to design a website </h4>
+              <h5 class="text-base sm:text-lg md:text-xl font-[500] ">(step-by-step guide)</h5>
+            </div>
+
+          </div>
+
+
+        </div> 
+
+
+
+
+
+      </div>
+    </section>
+
+
+
+    <section class="Made-section relative z-40 bg-[#e2d8ff]">
+      <div class="w-[90%] m-auto py-10">
+
+        <div class="made-top flex flex-col gap-3 sm:flex-row sm:justify-between  ">
+          <h3 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-8xl text-[#101585] ">Made on Wix
+          </h3>
+          <button
+          class="w-full  sm:w-[20%] md:w-[21%] lg:w-[22%] text-base md:text-xl text-white h-16 bg-[#101585] rounded-[50px]"
+        >
+          Explore Site 
+        </button>
+        </div>
+        <div class="made-bottom">
+
+            <!-- Swiper -->
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+          <div class="h-[200px] sm:h-[250px] ">
+            <img src="./img/swiper1111.png" alt="">
+          </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="h-[200px] sm:h-[250px] ">
+          <img src="./img/swiper1111.png" alt="">
+        </div>
+    </div>
+    <div class="swiper-slide">
+      <div class="h-[200px] sm:h-[250px] ">
+        <img src="./img/swiper1111.png" alt="">
+      </div>
+  </div>
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+
+
+
+        </div>
+
+
+      </div>
+    </section>
+
+
+
+
+
+
+    <script>
+      const showcase = document.getElementById("showcase");
+
+      const elements = [
+        {
+          el: document.getElementById("lamp"),
+          moveX: 160,
+          moveY: 460,
+          fadeStart: false,
+        },
+        {
+          el: document.getElementById("grun"),
+          moveX: 50,
+          moveY: 500,
+          fadeStart: false,
+        },
+        {
+          el: document.getElementById("bor"),
+          moveX: -170,
+          moveY: 990,
+          fadeStart: false,
+        },
+        {
+          el: document.getElementById("ongbottom"),
+          moveX: -110,
+          moveY: 326,
+          fadeStart: false,
+        },
+        {
+          el: document.getElementById("ramka"),
+          moveX: -170,
+          moveY: 1160,
+          fadeStart: true,
+        },
+        {
+          el: document.getElementById("aitext"),
+          moveX: -270,
+          moveY: 1160,
+          fadeStart: true,
+        },
+      ];
+
+      window.addEventListener("scroll", () => {
+        const rect = showcase.getBoundingClientRect();
+        const scrollProgress =
+          1 - Math.max(0, Math.min(1, rect.bottom / window.innerHeight));
+
+        elements.forEach(({ el, moveX, moveY, fadeStart }) => {
+          if (!el) return;
+
+          const x = scrollProgress * moveX;
+          const y = scrollProgress * moveY;
+          const scale = 1 - scrollProgress * 0.1;
+
+          el.style.transform = `translate(${x}px, ${y}px) scale(${scale})`;
+
+          if (fadeStart) {
+            if (scrollProgress > 0.1) {
+              const fadeOut = 1 - (scrollProgress - 0.1) * (1 / 0.2);
+              el.style.opacity = Math.max(0, fadeOut);
+            } else {
+              el.style.opacity = 1;
+            }
+          } else {
+            el.style.opacity = 1 - scrollProgress * 0.25;
+          }
+        });
+      });
+    </script>
+
+    <script>
+      // Accordion codi
+      const accordionHeaders = document.querySelectorAll(".accordion-header");
+      let activeAccordion = document.getElementById("accordion-1");
+
+      accordionHeaders.forEach((header) => {
+        header.addEventListener("click", () => {
+          const targetId = header.getAttribute("data-target");
+          const content = document.getElementById(targetId);
+          const chevronDown = header.querySelector(".chevron-down");
+          const chevronUp = header.querySelector(".chevron-up");
+
+          if (content.classList.contains("active")) {
+            content.classList.remove("active");
+            chevronDown.classList.remove("hidden");
+            chevronDown.classList.add("block");
+            chevronUp.classList.remove("block");
+            chevronUp.classList.add("hidden");
+            activeAccordion = null;
+          } else {
+            if (activeAccordion) {
+              activeAccordion.classList.remove("active");
+              const activeHeader = document.querySelector(
+                `[data-target="${activeAccordion.id}"]`
+              );
+              const activeChevronDown =
+                activeHeader.querySelector(".chevron-down");
+              const activeChevronUp = activeHeader.querySelector(".chevron-up");
+
+              activeChevronDown.classList.remove("hidden");
+              activeChevronDown.classList.add("block");
+              activeChevronUp.classList.remove("block");
+              activeChevronUp.classList.add("hidden");
+            }
+
+            content.classList.add("active");
+            chevronDown.classList.remove("block");
+            chevronDown.classList.add("hidden");
+            chevronUp.classList.remove("hidden");
+            chevronUp.classList.add("block");
+            activeAccordion = content;
+          }
+        });
+      });
+    </script>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+
+ <!-- Swiper JS -->
+ <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+ <!-- Initialize Swiper -->
+ <script>
+   var swiper = new Swiper(".mySwiper", {
+     slidesPerView: 3,
+     spaceBetween: 30,
+     pagination: {
+       el: ".swiper-pagination",
+       clickable: true,
+     },
+   });
+ </script>
+
+
+
+  </body>
+</html>
